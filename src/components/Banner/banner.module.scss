@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+.container {
+  width: 100%;
+  background-image: url('../../assets/background.png');
+  background-position: center;
+  background-color: #8B1414;
+  color: #E4EEF1;
+}
+
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 100%;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 35vh;
+
+  p {
+    font-size: 25px;
+    width: 75%;
+    font-weight: 300;
+    font-family: 'Inria Sans', sans-serif;
+  }
+}
+
+@media (min-width: 162px) and (max-width: 768px) {
+  .hero {
+    img {
+      width: 100%;
+      height: 40vh;
+      object-fit: cover;
+    }
+  }
+
+  .content {
+    flex-direction: column;
+    height: 100%;
+    padding: 2rem 0.5rem;
+
+    img {
+      display: none;
+    }
+
+    p {
+      font-size: 20px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
